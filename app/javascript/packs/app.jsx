@@ -4,23 +4,14 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import PropTypes from 'prop-types'
+import GameCard from './GameCard'
 
-const Hello = props => (
-  <div>Hello {props.name}!</div>
-)
-
-Hello.defaultProps = {
-  name: 'David'
-}
-
-Hello.propTypes = {
-  name: PropTypes.string
-}
+const gamName = 'The Gardens Between'
+const gamImgUrl = 'https://cdn02.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_download_software/SQ_NSwitchDS_TheGardensBetween.jpg'
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <Hello name="React" />,
+    <GameCard name={gamName} imgUrl={gamImgUrl}/>,
     document.body.appendChild(document.createElement('div')),
   )
 })
