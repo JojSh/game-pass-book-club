@@ -1,0 +1,21 @@
+.game-card {
+  font-family: 'Open Sans';
+  display: flex;
+  width: 90%;
+  margin: auto;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 10px;
+
+  .game-img {
+    width: 30%
+  }
+  .game-details {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    .game-name {}
+    .game-description {}
+  }
+}
